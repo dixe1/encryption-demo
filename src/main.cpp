@@ -6,7 +6,7 @@ int main()
 {
 	Logger::consoleLoggingEnabled = true;
 
-	std::string encodedMessage = Caesar::encode("Ala! ma kota");
+	std::string encodedMessage = Caesar::encode("Hello World!");
 	std::string decodedMessage = Caesar::decode(encodedMessage);
 
 	Logger::DEBUG(encodedMessage);
