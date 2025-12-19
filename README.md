@@ -32,7 +32,7 @@ int main()
 {
     Logger::consoleLoggingEnabled = true;
 
-    std::string message = "Hello World";
+    std::string message = "Hello World!";
     std::string encoded = Caesar::encode(message, 16);
     std::string decoded = Caesar::decode(encoded, 16);
 
