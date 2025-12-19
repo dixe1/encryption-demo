@@ -4,13 +4,12 @@
 
 int main()
 {
-	// Getting system information
-	SystemInfo info = SystemInfoProvider::get();
-
-	// Example usage of Logger and SystemInfoProvider
 	Logger::consoleLoggingEnabled = true;
-	Logger::INFO("Application started with " + std::to_string(info.threadsCount) + " threads available.");
-	Logger::INFO("Operating System: " + SystemInfoProvider::getOSNameString(info.osName));
-}
 
-// Template from: https://github.com/dixe1/cpp-project-template
+	std::string encodedMessage = Caesar::encode("Ala! ma kota");
+	std::string decodedMessage = Caesar::decode(encodedMessage);
+
+	Logger::DEBUG(encodedMessage);
+	Logger::DEBUG(decodedMessage);
+
+}

@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 include_directories(include)
 
-file(GLOB SRC_FILES
+file(GLOB_RECURSE SRC_FILES
     src/*.cpp
 )
 
