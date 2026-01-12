@@ -17,7 +17,7 @@ static void shiftChar(std::string& message, const int shift, int i)
 
 static std::string start(std::string message, const int shift)
 {
-	for (int i{}; i < message.length(); i++)
+	for (std::size_t i{}; i < message.length(); i++)
 	{
 		shiftChar(message, shift, i);
 	}
